@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    overflow: hidden;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    background: url(https://avatars.mds.yandex.net/i?id=06353ef49ae70806b50bdccd485bde00_l-10036291-images-thumbs&n=13), #000;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+.reg {
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #94939380;
+    backdrop-filter: blur(15px);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 20px 0;
+}
+
+.input-field label {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+    line-height: 200%;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+.but {
+    padding: 15px;
+    border-radius: 130px;
+    background-color: rgba(145, 131, 105, 0.5);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: background-color .4s ease;
+    color: azure;
+    border: 1px solid #9b908080;
+}
+
+.but:hover {
+    transform: scale(1.05);
+    background-color: rgba(239, 112, 0, 0.4);
+}
+
